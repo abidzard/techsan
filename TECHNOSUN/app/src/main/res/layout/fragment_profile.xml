@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".ProfileFragment">
+
+    <ImageView
+        android:id="@+id/foto_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_akun_bulat"/>
+
+    <TextView
+        android:id="@+id/nama_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foto_profile"
+        android:layout_marginTop="1dp"
+        android:layout_centerHorizontal="true"
+        android:text="Mohamad Alda"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/nama_user"
+       android:layout_marginTop="50dp"
+       android:layout_marginHorizontal="20dp"
+       android:orientation="vertical">
+
+       <Button
+           android:id="@+id/edit_profile"
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:text="Edit Profile"/>
+
+       <Button
+           android:id="@+id/news"
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:text="Berita Terbaru"/>
+
+       <Button
+           android:id="@+id/pusat_bantuan"
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:text="Pusat Bantuan"/>
+
+       <Button
+           android:id="@+id/pengaturan"
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:text="Pengaturan"/>
+
+   </LinearLayout>
+
+</RelativeLayout>
